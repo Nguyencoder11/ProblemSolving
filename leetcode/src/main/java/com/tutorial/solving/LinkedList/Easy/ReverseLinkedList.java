@@ -86,7 +86,7 @@ public class ReverseLinkedList {
 
         ListNode head = new ListNode(values[0]);
         ListNode current = head;
-        for (int i = 0; i < values.length; i++) {
+        for (int i = 1; i < values.length; i++) {
             current.next = new ListNode(values[i]);
             current = current.next;
         }
