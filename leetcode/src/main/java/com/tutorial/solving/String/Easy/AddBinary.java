@@ -7,7 +7,7 @@ public class AddBinary {
         int j = b.length() - 1;
         int carry = 0;
 
-        while(i >= 0 || j >= 0 || carry == 1) {
+        while (i >= 0 || j >= 0 || carry == 1) {
             int digitA = i >= 0 ? a.charAt(i) - '0' : 0;
             int digitB = j >= 0 ? b.charAt(j) - '0' : 0;
 
@@ -17,8 +17,9 @@ public class AddBinary {
 
             carry = sum / 2;
 
-            i--; j--;
-        }   
+            i--;
+            j--;
+        }
 
         return result.reverse().toString();
     }
@@ -32,9 +33,9 @@ public class AddBinary {
         };
 
         String[] StringB_TC = {
-            "1",
-            "1011"
-    };
+                "1",
+                "1011"
+        };
 
         for (int i = 0; i < StringA_TC.length; i++) {
             System.out.println("Testcase " + (i + 1) + ":");
